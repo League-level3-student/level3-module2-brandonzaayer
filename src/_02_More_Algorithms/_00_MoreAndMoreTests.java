@@ -61,25 +61,34 @@ public class _00_MoreAndMoreTests {
 	  }
 
 	 boolean isSquare(int i) {
-		if(Math.sqrt(i) % 2 == 0) {
+		 double squareD =  Math.sqrt(i);
+		 int squareI = (int) Math.sqrt(i);
+		 if(squareD - squareI == 0) {
 			return true;
 		}
-		return false;
+			return false;
 	}
 
-//	@Test
-//	  public void CubeTest() {
-//
-//	    assertTrue(isCube(27));
-//	    assertTrue(isCube(216));
-//	    assertTrue(isCube(729));
-//	    assertTrue(isCube(1));
-//	    assertFalse(isCube(3));
-//	    assertFalse(isCube(22));
-//	    assertFalse(isCube(143));
-//
-//	  }
+	@Test
+	  public void CubeTest() {
 
+	    assertTrue(isCube(27));
+	    assertTrue(isCube(216));
+	    assertTrue(isCube(729));
+	    assertTrue(isCube(1));
+	    assertFalse(isCube(3));
+	    assertFalse(isCube(22));
+	    assertFalse(isCube(143));
+
+	  }
+	 boolean isCube(int i) {
+		 double cubeD =  Math.cbrt(i);
+		 int cubeI = (int) Math.cbrt(i);
+		 if(cubeD - cubeI == 0) {
+			return true;
+		}
+			return false;
+	}
 	
 
 
