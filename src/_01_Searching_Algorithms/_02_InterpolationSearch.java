@@ -31,7 +31,7 @@ public class _02_InterpolationSearch {
 					return -1;
 				}
 			}
-		}
+		
 		// 5. create an integer called position
 		// initialize it to the following:
 		// start + (((end - start) * (value - array[start])) / (array[end] -
@@ -46,13 +46,17 @@ public class _02_InterpolationSearch {
 		}
 		// 7. if the array element at position is less than value,
 		// then set start equal to position plus one
-		if (array[position] < value) {
+		else if (array[position] < value) {
 			start = position + 1;
 		}
 		// 8. otherwise, set end equal to position minus one
-		end = position - 1;
+		else{
+			end = position - 1;
+		}
+		}
 		// 9. Return -1 because the value was not found
 		return -1;
 
-	}
+	
+}
 }

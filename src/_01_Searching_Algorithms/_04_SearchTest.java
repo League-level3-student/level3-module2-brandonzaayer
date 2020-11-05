@@ -29,14 +29,17 @@ class _04_SearchTest {
 	public void testInterpolationSearch() {
 		//3. use the assertEquals method to test your interpolation search method.
 		//   remember that the array must be sorted and evenly distributed
-		int[] nums = {1, 2, 3, 4, 5};
-		int index = _02_InterpolationSearch.interpolationSearch(nums, 4);
-		assertEquals(index, 3);
+		int[] nums = {6, 12, 18, 24, 30};
+		int index = _02_InterpolationSearch.interpolationSearch(nums, 18);
+		assertEquals(index, 2);
 	}
 	
 	@Test
 	public void testExponentialSearch() {
 		//4. use the assertEquals method to test your exponential search method.
 		//   remember that the array must be sorted
+		int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		int index = _01_BinarySearch.binarySearch(nums, 1, 10, 7);
+		assertEquals(index, 6);
 	}
 }
